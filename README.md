@@ -17,33 +17,6 @@ This is the backend module of the **SmarTea Business Automation Software**. It p
 
 ## 🗂️ Complete Backend Project Structure
 
-backend/
-├── api/
-│ ├── pycache/
-│ ├── main.py # FastAPI app w/ prediction + retrain routes
-│ └── schemas.py # Pydantic models for request/response validation
-│
-├── core/
-│ ├── pycache/
-│ ├── logger.py # Centralized logging setup
-│ ├── predict_model.py # Loads model, runs prediction
-│ ├── preprocess.py # Data loading, preprocessing pipeline
-│ ├── retrain.py # Triggers model retraining (used in /retrain)
-│ └── train_model_skopt.py # XGBoost model training with skopt
-│
-├── data/
-│ └── Lead_data.csv # Cleaned and labeled dataset for training
-│
-├── logs/
-│ └── app.log # Logs predictions and retrain events
-│
-├── models/
-│ └── lead_model.pkl # Trained XGBoost pipeline (joblib)
-│
-├── .dockerignore # Prevents unnecessary files from being in Docker builds
-├── .gitignore # Git exclusions (ignores model, venv, logs, etc.)
-├── Dockerfile # For Dockerizing the backend API
-├── README.md # This file
-├── requirements.txt # Python dependency list
-├── test_predict.py # Local model test using sample input
-└── test_requests.py # Sends request to running FastAPI server
+<pre> backend/ ├── api/ │ ├── __pycache__/ │ ├── main.py # FastAPI app w/ prediction + retrain routes │ └── schemas.py # Pydantic models for request/response validation │ ├── core/ │ ├── __pycache__/ │ ├── logger.py # Centralized logging setup │ ├── predict_model.py # Loads model, runs prediction │ ├── preprocess.py # Data loading, preprocessing pipeline │ ├── retrain.py # Triggers model retraining (used in /retrain) │ └── train_model_skopt.py # XGBoost model training with skopt │ ├── data/ │ └── Lead_data.csv # Cleaned and labeled dataset for training │ ├── logs/ │ └── app.log # Logs predictions and retrain events │ ├── models/ │ └── lead_model.pkl # Trained XGBoost pipeline (joblib) │ ├── .dockerignore # Prevents unnecessary files from being in Docker builds ├── .gitignore # Git exclusions (ignores model, venv, logs, etc.) ├── Dockerfile # For Dockerizing the backend API ├── README.md # This file ├── requirements.txt # Python dependency list ├── test_predict.py # Local model test using sample input └── test_requests.py # Sends request to running FastAPI server </pre>
+
+---
