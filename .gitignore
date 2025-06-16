@@ -1,0 +1,65 @@
+# 🚫 Ignore Docker build files
+Dockerfile
+.dockerignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.pyc
+*.log
+
+# Virtual environments
+venv/
+.env/
+.envrc
+*.env
+
+# Model files
+models/lead_model.pkl
+models/*.pkl
+
+# Logs
+logs/
+*.log
+
+# Jupyter notebooks (optional)
+*.ipynb_checkpoints
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Byte-compiled / cache
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Test reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+.cache
+
+# Build
+build/
+dist/
+*.egg-info/
